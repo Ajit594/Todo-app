@@ -1,12 +1,54 @@
-# React + Vite
+# TodoContextLocal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A advance Todo application with user authentication using Redux for state management. This project demonstrates how to manage state in a React application and protect routes based on user authentication.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User authentication (login/logout) using Redux
+- Add, update, delete, and toggle completion status of todos
+- Persist todos in local storage
+- Protect todo list behind authentication
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+src/ ├── components/ │ ├── Login.jsx │ ├── Logout.jsx │ ├── TodoForm.jsx │ ├── TodoList.jsx ├── contexts/ │ ├── index.js ├── App.jsx ├── App.css ├── index.css ├── main.jsx ├── store.js
+
+
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/todocontextlocal.git
+   cd todocontextlocal
+
+Install dependencies:
+   npm install
+
+Start the development server:
+npm start
+
+Open your browser and navigate to http://localhost:3000.
+
+## Usage
+Login: Click the "Login" button to simulate user authentication.
+Logout: Click the "Logout" button to log out.
+Add Todo: Use the form to add a new todo.
+Update Todo: Click on a todo to update its content.
+Delete Todo: Click the delete button to remove a todo.
+Toggle Complete: Click the checkbox to mark a todo as complete or incomplete.
+
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
