@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { TodoProvider } from './contexts';
 import './App.css';
 import TodoForm from './components/TodoForm';
-import TodoList from './components/Todolist';
+import TodoList from './components/TodoList';
 import Login from './components/Login';
 import Logout from './components/Logout';
 
